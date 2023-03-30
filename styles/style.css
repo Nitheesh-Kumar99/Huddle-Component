@@ -119,6 +119,7 @@ button {
     width: 50%;
   }
   .right-container {
+    margin-left: 50px;
     width: 50%;
     margin-top: -150px;
   }
@@ -128,13 +129,14 @@ button {
     font-size: 23px;
   }
   h1 {
-    width: 60%;
+    width: 80%;
     line-height: 4rem;
     text-align: left;
     font-size: 40px;
   }
   button {
     margin-left: 80px;
+    padding: 15px 70px;
   }
   button:hover {
     cursor: pointer;
