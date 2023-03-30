@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: var(--ff-open-sans);
+  background-color: var(--clr-violet);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+}
+:root {
+  --clr-violet: hsl(257, 40%, 49%);
+  --clr-soft-magenta: hsl(300, 69%, 71%);
+  --ff-open-sans: "Open Sans", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.logo {
+  height: 5rem;
+}
+.chat-logo {
+  padding-bottom: 5rem;
+  width: 150px;
+}
+.chat-img {
+  padding-top: 20px;
+  padding-left: 45px;
+}
+.mid-session {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+.main-image {
+  width: 80%;
+  margin-left: 50px;
+}
+h1 {
+  width: 71%;
+  text-align: center;
+  color: white;
+  font-family: var(--ff-poppins);
+  line-height: 45px;
+  font-weight: 600;
+  padding-left: 30px;
+  margin-left: 50px;
+}
+.title-description {
+  font-size: 18px;
+  width: 65%;
+  text-align: center;
+  line-height: 2rem;
+  font-family: var(--ff-open-sans);
+  font-weight: 400;
+  color: white;
+  padding-bottom: 2rem;
+  margin-left: 80px;
+}
+button {
+  display: inline-block;
+  border-radius: 25px;
+  padding: 15px 100px;
+  background-color: white;
+  color: var(--clr-violet);
+  border: 2px solid white;
+  margin-left: 130px;
+}
+.social {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (min-width: 991px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+  }
+  .mid-session {
+    flex-direction: row;
+  }
+  .main-image {
+    width: 800px;
+  }
+  .left-container {
+    width: 50%;
+  }
+  .right-container {
+    width: 50%;
+    margin-top: -150px;
+  }
+  .title-description {
+    width: 80%;
+    text-align: left;
+    font-size: 23px;
+  }
+  h1 {
+    width: 60%;
+    line-height: 4rem;
+    text-align: left;
+    font-size: 40px;
+  }
+  button {
+    margin-left: 80px;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: var(--clr-soft-magenta);
+    color: white;
+  }
+  .social-icons {
+    justify-content: right;
+    margin-right: 60px;
+  }
+  .social:hover {
+    cursor: pointer;
+    background-color: var(--clr-soft-magenta);
+    color: white;
+  }
+}
